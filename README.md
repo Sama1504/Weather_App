@@ -17,6 +17,8 @@ This is a web application that allows users to check the current weather conditi
 
 ## Demo
 
+https://github.com/Sama1504/Weather_App/assets/96735639/86640853-c9e4-4b2e-8e85-e65e6f106a2b
+
 
 ## Getting Started
 
