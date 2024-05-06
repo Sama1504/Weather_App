@@ -15,9 +15,11 @@ This is a web application that allows users to check the current weather conditi
 - HTML/CSS
 - OpenWeatherMap API
 
-## Demo
+## Demo 
 
 https://github.com/Sama1504/Weather_App/assets/96735639/86640853-c9e4-4b2e-8e85-e65e6f106a2b
+
+![Screenshot 2024-05-06 194928](https://github.com/Sama1504/Weather_App/assets/96735639/d53323f6-f2d0-44be-a460-086e7db1edd3)
 
 
 ## Getting Started
