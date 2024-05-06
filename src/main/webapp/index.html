@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; /* Changed font to Montserrat */
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b); /* Updated background gradient */
+}
+
+.mainContainer {
+  width: 25rem;
+  height: auto;
+  border-radius: 1.5rem; /* Slightly increased border radius */
+  background: #f0f0f0; /* Light gray background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softened box shadow */
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.searchInput input {
+  width: 100%;
+  height: 2.5rem; /* Increased input height */
+  outline: none;
+  font-size: 1.2rem; /* Increased font size */
+  color: #555; /* Darkened text color */
+  padding: 0.5rem;
+  border-radius: 2rem; /* Rounded input */
+  border: 1px solid #ccc;
+}
+
+.searchInput input:focus {
+  border-color: #8e44ad; /* Highlighted border color */
+}
+
+.searchInput button {
+  width: 3rem; /* Increased button size */
+  height: 3rem; /* Increased button size */
+  cursor: pointer;
+  color: #777; /* Darkened button color */
+  border-radius: 50%;
+  margin-left: 0.5rem; /* Adjusted margin */
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 2px solid #ccc; /* Thicker border */
+}
+
+.searchInput button:hover {
+  color: #fff; /* Button color on hover */
+  background-color: #8e44ad; /* Button background on hover */
+  border-color: #8e44ad; /* Button border color on hover */
+}
+
+.weatherIcon {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  max-width: 100%;
+  width: 10rem; /* Increased icon size */
+}
+
+.weatherDetails .temp {
+  font-size: 3rem; /* Increased temperature font size */
+  font-weight: bold; /* Added bold font weight */
+  color: #555; /* Darkened temperature color */
+}
+
+.cityDetails {
+  color: #333; /* Darkened city details color */
+  font-size: 3rem; /* Increased font size */
+  text-align: center;
+  margin: 1rem 0; /* Adjusted margin */
+}
+
+.cityDetails .date {
+  color: #555; /* Darkened date color */
+  font-size: 1.8rem; /* Adjusted font size */
+  text-align: center;
+}
+
+.windDetails {
+  display: flex;
+  margin: 1rem 0; /* Adjusted margin */
+  justify-content: space-around;
+}
+
+.windDetails .humidityBox,
+.windDetails .windSpeed {
+  display: flex;
+  align-items: center; /* Centered items vertically */
+  font-size: 1.2rem; /* Adjusted font size */
+  color: #555; /* Darkened text color */
+}
+
+.windDetails .humidity .humidityValue {
+  font-size: 2.5rem; /* Increased humidity value font size */
+  font-weight: bold; /* Added bold font weight */
+  color: #555; /* Darkened text color */
+}
+
+.windDetails .humidityBox img,
+.windDetails .windSpeed img {
+  max-height: 2.5rem; /* Adjusted icon size */
+  margin-right: 0.5rem;
+}
+
+.image-logo {
+  height: 15rem;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)); /* Soft drop shadow */
+  margin-bottom: 1rem; /* Added margin bottom */
+}
+</style>
+
+</head>
+<body>
+<div style="color:white; text-align:center">
+<img src="images/weather-logo.png" style=" height: auto;width: auto;filter: drop-shadow(10px 10px 10px black);">
+    <h1>Welcome to the Weather Web App</h1>
+     <form action="MyServlet" method="post" class="searchInput">
+            <input type="text" placeholder="Enter City Name" id="searchInput" value="" name="city"/>
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>    
+ </div>
+</body>
+</html>
